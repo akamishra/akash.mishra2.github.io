@@ -1,0 +1,227 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+		 width: 100%;
+         margin: 0;
+		`}
+		blockquote
+		{
+			font-size: 15px;
+			text-align: justify;
+		}		
+		</style>
+			
+		<script>
+			var akash = {
+			pageName: "localhostHomepage",
+			prodCat:"Mypage",
+			prodName:"Gym intro",
+			customLinkDetails:"Test"
+			}
+		</script>
+	
+
+		<script type="text/javascript" src="//nexus.ensighten.com/eclerx/Akash/Bootstrap.js"></script> 
+
+		
+		<script>
+			function calculateBmi() 
+			{
+				var weight = document.bmiForm.weight.value
+				var height = document.bmiForm.height.value
+				if(weight > 0 && height > 0){	
+					var finalBmi = weight/(height/100*height/100)
+					document.bmiForm.bmi.value = finalBmi
+				if(finalBmi < 18.5){
+					document.bmiForm.meaning.value = "You are too thin."
+				}
+				if(finalBmi > 18.5 && finalBmi < 25){
+					document.bmiForm.meaning.value = "You are healthy."
+				}
+				if(finalBmi > 25){
+					document.bmiForm.meaning.value = "You are overweight."
+				}
+				}
+				else{
+					alert("Please Fill in everything correctly")
+				}
+			}
+			
+			/*
+			function ct()
+			{
+				s.linkTrackVars="eVar15,prop15,events";
+				s.linkTrackEvents="event23";
+				s.eVar15="akash"; 
+				s.events="event23";
+				s.tl(this,'e','my link'); 
+			}
+			
+			function clt()
+			{
+				s.linkTrackVars="eVar15,prop15,events";
+				s.linkTrackEvents="event23";
+				s.eVar15="akash"; 
+				s.events="event23";
+				s.tl(this,'o','my link'); 
+			}
+			*/
+		</script>		
+	</head>
+	<body>					
+	<div>
+		<nav class="navbar collapse navbar-collapse">
+			<div class="navbar-header">
+				<img src="img/logo.jpg" style="height:200px; width:1200px; text-align:center;"/>
+			</div>		
+			<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a href="index.html"><button type="button" class="btn btn-primary btn-lg" onClick="clt();">Home</button></a>
+			</div>
+			<div class="btn-group">
+				<a href="services.html"><button type="button" class="btn btn-primary btn-lg">Services</button></a>
+			</div>
+			<div class="btn-group">
+			<a href="about.html"><button type="button" class="btn btn-primary btn-lg">About us</button></a>
+			</div> 
+			<div class="btn-group">
+			<a href="feedback.html"><button type="button" class="btn btn-primary btn-lg">Feedback</button></a>
+			</div> 
+			<div class="btn-group">
+			<a href="contact.html"><button type="button" class="btn btn-primary btn-lg">Contact Us</button></a>
+			</div> 
+			</div>								
+		</nav>	
+		
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+	<br/><br/>
+    <div class="carousel-inner" role="listbox" style="margin-top:-40px">
+      <div class="item active">
+        <img src="img/gymsli1.jpg" alt=""  >
+      </div>
+
+      <div class="item">
+        <img src="img/gymsli2.jpg" alt="Chania" >
+      </div>
+    
+      <div class="item">
+        <img src="img/gymsli3.jpg" alt="Flower" >
+      </div>
+     
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  </div>
+		<div class="container">
+			<h1>Stay Fit, and join us soon.</h1>       
+  <p>We care for your health, In this era of mental strain physical strain is important too.</p>
+  <blockquote>
+    <p>Enjoy unlimited access to a unique fitness center that offers encouragement, privacy, and experienced staff committed to helping you accomplish your goals.  BPG India provides a sense of community, empowers women of all ages to take charge of their health, and inspires you to do your very best every time you come.  Join "New India's best kept secret" today and build success in your journey to health.</p>    
+  </blockquote>
+  
+  <h3>Coaches</h1>  
+  <blockquote>
+    <p>All of our coaches at BPG have been through a rigorous screening process and have met our high standards for coaching. Their coaching experience combined with their practical application of BPG in competition or in training for GPP (general physical preparedness) gives all our coaches hundreds to thousands of hours of experience.</p>    
+  </blockquote>
+
+	<h3>Equipment</h1>  
+  <blockquote>
+    <p>We do all our work with barbells, kettlebells, boxes, wall balls, gymnastics rings and a pull-up rig. We have zero mirrors on the floor, no gym gossip, and no salesmen. If you want results and you want to be fit, strong, and healthy, we provide a fun environment that fosters all of the above. Before and after workout we encourage and foster community building in our gym lounge and mobility room. Classes are one hour long and the workout of the day is the same for the entire day. So if you miss your regular class time, you can come in later in the day and get the same workout in. You will get warmed up, work on a particular skill or strength movement, do the workout, stretch out, all in a one hour class.</p>    
+  </blockquote>
+  
+  <h3>Community</h1>  
+  <blockquote>
+    <p>BPG is a great platform for building a strong and tight-knit community around something positive.  We will have a very intimate membership base and you will get to know each member and at one time or another you will get to workout with everyone.  As CrossFit Deliverance becomes a part of your daily routine, you will forge amazing friendships and be held accountable by not only your coaches, but your fellow members that you see day in and day out.  The University District already has an amazing sense of community and we want to add to it and continue to build up this already great community.</p>    
+  </blockquote>
+  
+  <h3>Calculate Your Body Mass Index</h1>  
+  <blockquote>
+    <p>Calculate Your Body Mass Index</p>
+		<ul>
+			<li>Enter your weight and height using standard or metric measures.</li>
+			<li>Select "Compute BMI" and a popup for calculating BMI will appear.</li>
+		</ul>
+		<a href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+			<span class="glyphicon glyphicon-modal-window"></span> Compute BMI
+		</a>
+  </blockquote>
+
+  <div class="modal fade" id="myModal" role="dialog">
+		 		<div class="modal-dialog">
+	
+			<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">BMI Calculator</h4>
+						</div>
+				<div class="modal-body">
+					<form name="bmiForm">
+						<div class="form-group">						
+							<label for="weight">Your Weight(kg): </label>
+							<input type="text" class="form-control" name="weight"><br />
+						</div>
+						<div class="form-group">						
+							<label for="weight">Your Height(cm): </label>
+							<input type="text" class="form-control" name="height"><br />
+						</div>
+						<br />
+						<button type="button" class="btn btn-primary" value="Calculate BMI" onClick="calculateBmi()">Calculate</button><br /><br/>
+						<div class="form-group">						
+							<label for="weight">Your BMI</label>
+							<input type="text" class="form-control" name="bmi"><br />
+						</div>
+						<div class="form-group">						
+							<label for="weight">This means</label>
+							<input type="text" class="form-control" name="meaning"><br />
+						</div>						
+						<button type="reset" class="btn btn-primary">Reset</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>											
+		</div>			
+  </div>
+  
+  
+  <!--footer part-->			
+			<footer style="background-color:#282829">				
+					<div align="center"><img src="img/bpg.jpg" width="90" align="center"/><br/><strong style="color:white">&copy;&nbsp; Body Power Gym</strong> </div>										
+			</footer>
+			
+			
+
+
+	
+	</body>
+</html>

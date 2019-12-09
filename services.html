@@ -1,0 +1,270 @@
+<!Doctype HTML>
+<html>
+	<head>
+	<title>Services</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+		.img-rounded {
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+
+		.img-rounded:hover {
+			width: 200px;
+			height: 190px;
+		}
+
+	.badge
+	{
+		background-color:#5bc0de;
+		height: 3rem;
+		width:35rem;
+		padding: 10px;
+	}
+
+	#total
+	{
+		background-color:   #337ab7;
+	}
+	
+	.mybtn
+	{
+		background-color: #D2691E; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		border-radius: 15%;
+	}
+	.mybtn:hover {background-color: #3e8e41}
+				
+		</style>		
+<script>		
+	function dispbase()
+	{
+		document.getElementById("base").style.display="block";
+		document.getElementById("premium").style.display="none";
+		
+	}
+	function dispprem()
+	{
+		document.getElementById("premium").style.display="block";
+		document.getElementById("base").style.display="none";
+	}
+</script>
+	</head>
+	<body>					
+	<div class="container-fluid">
+		<nav class="navbar collapse navbar-collapse">
+			<div class="navbar-header">
+				<img src="img/logo.jpg" style="height:200px; width:1200px; text-align:center;"/>
+			</div>		
+			<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a href="index.html"><button type="button" class="btn btn-primary btn-lg">Home</button></a>
+			</div>
+			<div class="btn-group">
+				<a href="services.html"><button type="button" class="btn btn-primary btn-lg">Services</button></a>
+			</div>
+			<div class="btn-group">
+			<a href="about.html"><button type="button" class="btn btn-primary btn-lg">About us</button></a>
+			</div> 
+			<div class="btn-group">
+			<a href="feedback.html"><button type="button" class="btn btn-primary btn-lg">Feedback</button></a>
+			</div> 
+			<div class="btn-group">
+			<a href="contact.html"><button type="button" class="btn btn-primary btn-lg">Contact Us</button></a>
+			</div> 
+			</div>								
+		</nav>
+		</div>
+<!-- part reserved for header -->
+		
+		<div class="container">		
+			<table class="table table-bordered">
+				<tr>
+					<td align="center">
+						<a href="personaltraining.html"><img src="img/personal-training.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+						<h3>Personal Training</h3></a> 						
+						
+					</td>
+					<td align="center">
+						<a href="pilates.html"><img src="img/pilates.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+						<h3>Pilates</h3></a>
+						
+					</td>
+					<td align="center">
+						<a href="yogaclass.html"><img src="img/yogaclass.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+						<h3>Yoga Class</h3></a>
+						
+						</td>
+				<tr>
+					<td align="center">
+						<a href="dietician.html"><img src="img/dieticiansupport.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+						<h3>Dietitian Support</h3></a>
+						
+					</td>
+					<td align="center">
+						<a href="cardio.html"><img src="img/cardio.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+						<h3>Cardio</h3></a>
+						
+					</td>			
+					<td align="center">
+						<a href="steamroom.html"><img src="img/steam room.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+						<h3>Steam Room</h3></a>
+						
+					</td>
+				</tr>
+			</table>									
+					
+					<div class="container">
+					<div class="row">
+					<div class="col-lg-6">
+					<a href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+						<span class="glyphicon glyphicon-film"></span> Online Tips
+					</a>
+					</div>
+					
+															
+					<div class="col-lg-6" align="right">
+					<a href="#" class="btn btn-info btn-lg " data-toggle="modal" data-target="#myModal2">
+						<span class="glyphicon glyphicon-ok"></span> Join us.
+					</a>
+					</div></div>
+					</div><br/>	
+						
+				
+			
+			<div class="modal fade" id="myModal2" role="dialog">
+				<div class="modal-dialog">
+	
+			<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Why wait? , rush for fitness</h4>
+						</div>
+				<div class="modal-body">
+						<div class="btn-group btn-group-justified">
+							<div class="btn-group">
+								<button type="button" class="btn btn-warning btn-lg" onclick="dispbase();">Base Pack</button></a>
+							</div>
+							<div class="btn-group">
+							<button type="button" class="btn btn-warning btn-lg" onclick="dispprem();">Premium</button></a>
+							</div>	  
+						</div> 
+					 <div class="panel panel-primary" style="display:none;" id="base">
+						<div class="panel-heading">Base pack offered to all our customers includes following features</div>
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">Cardio<span class="badge"><i class="fa fa-inr"></i>2700</span></li>
+									<li class="list-group-item">Weight-Lifting<span class="badge"><i class="fa fa-inr"></i>1500</span></li> 
+									<li class="list-group-item">Pilates<span class="badge"><i class="fa fa-inr"></i>700</span></li> 
+									<li class="list-group-item"><strong>TOTAL</strong><span class="badge" id="total"><i class="fa fa-inr"></i>4900</span></li>
+								</ul>
+							</div>
+							<div align="center"><button type="submit" class="mybtn" align="center">Apply Now for Base pack</button></div>
+					</div>				
+						<div class="panel panel-primary" id="premium" style="display:none;">
+						<div class="panel-heading">Premium Pack is an optional add-on to the base pack</div>
+							<div class="panel-body">
+								<ul class="list-group">
+									<li class="list-group-item">Base Pack<span class="badge"><i class="fa fa-inr"></i>4900</span></li>
+									<li class="list-group-item">Personal Trainer<span class="badge"><i class="fa fa-inr"></i>1500</span></li> 
+									<li class="list-group-item">Yoga class<span class="badge"><i class="fa fa-inr"></i>800</span></li> 
+									<li class="list-group-item">Steam Room<span class="badge"><i class="fa fa-inr"></i>500</span></li> 
+									<li class="list-group-item">Dietician Support<span class="badge"><i class="fa fa-inr"></i>1000</span></li> 
+									<li class="list-group-item"><strong>TOTAL</strong><span class="badge" id="total"><i class="fa fa-inr"></i>8700</span></li>
+								</ul>
+							</div>
+							
+							<div align="center"><button type="submit" class="mybtn" align="center">Apply Now for Premium pack</button></div>
+					</div>										
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>											
+		</div>				
+			
+			
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+	
+			<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Online Tips</h4>
+						</div>
+				<div class="modal-body">
+					<video width="400" controls>
+						<source src="img/mov_bbb.mp4" type="video/mp4">
+						<source src="mov_bbb.ogg" type="video/ogg">						
+					</video>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>											
+		</div>				
+	</div>
+		
+		<!--footer part-->			
+			<footer style="background-color:#282829">				
+					<div align="center"><img src="img/bpg.jpg" width="90" align="center"/><br/><strong style="color:white"> &copy;&nbsp;Body Power Gym</strong> </div>										
+			</footer>
+			
+			
+			
+						<!-- SiteCatalyst code version: H.27.5. -->
+<script language="JavaScript" type="text/javascript" src="http://abacustraining6.india.eclerx.com/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName=document.title; 
+s.server=window.location.hostname
+s.channel="web"
+s.pageType="404"
+s.prop1="Homepage"
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+/* Conversion Variables */
+s.campaign=""
+s.state="Maharashtra";
+s.zip="400708";
+s.events=1
+s.products=""
+s.purchaseID=""
+s.eVar1="Homepage";
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://eclerx.sc.omtrdc.net/b/ss/eclerxtest/1/H.27.5--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.27.5. -->
+
+			
+		
+	</body>
+</html>
