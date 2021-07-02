@@ -345,7 +345,9 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 		
 	</body>
 <script>
-	var theDiv = document.getElementById("form");
-theDiv.innerHTML += " FBID"+ Math.random(); 
+	var d1 = document.getElementById('form');
+d1.insertAdjacentHTML('beforeend', '<div id="feedbackID">'FBID+ Math.random()'</div>');
+
+
 </script>
 </html>
