@@ -240,6 +240,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</script>		
 	</head>
 	<body>
+		
+	
 		<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQJ5TDV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -272,6 +274,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="container" id="form" align="center">					
 			<h2>Feedback Form</h2>					
 				<div class="form-group">
+					<input type="text" class="form-control" id="feedbackID" value="FB1008"/>
 				<label for="usr">Name:</label>
 				<input type="text" class="form-control" id="name" onkeyup="validateName();"/>
 				<span id="nameval" style="color:red"></span>
@@ -344,10 +347,4 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 		
 	</body>
-<script>
-	var d1 = document.getElementById('form');
-d1.insertAdjacentHTML('beforeend', '<div id="feedbackID">'FBID+ Math.random()'</div>');
-
-
-</script>
 </html>
