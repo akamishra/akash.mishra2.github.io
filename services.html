@@ -201,7 +201,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="modal-body">
 						<div class="btn-group btn-group-justified">
 							<div class="btn-group">
-								<button type="button" class="btn btn-warning btn-lg" onclick="dispbase();">Base Pack</button></a>
+								<button type="button" class="btn btn-warning btn-lg" onclick="dispbase(); dataLayer.push({
+  'ecommerce': {
+    'currencyCode': 'INR',                       
+    'impressions': [
+     {
+       'name': 'Base Pack',       
+       'id': '12345',
+       'price': '4900.00',
+       'brand': 'GYM',       
+       'position': 1
+     },
+     {
+     'name': 'Personal Trainer',       
+       'id': '12345',
+       'price': '1500.00',
+       'brand': 'GYM',       
+       'position': 2
+     }
+	 {
+     'name': 'Yoga Class',       
+       'id': '12345',
+       'price': '800.00',
+       'brand': 'GYM',       
+       'position': 3
+     }
+	 {
+     'name': 'Steam Room',       
+       'id': '12345',
+       'price': '500.00',
+       'brand': 'GYM',       
+       'position': 4
+     }
+	 {
+     'name': 'Dietician Support',       
+       'id': '12345',
+       'price': '1000.00',
+       'brand': 'GYM',       
+       'position': 5
+     }
+	 ]
+	 }}) ">Base Pack</button></a>
 							</div>
 							<div class="btn-group">
 							<button type="button" class="btn btn-warning btn-lg" onclick="dispprem();">Premium</button></a>
