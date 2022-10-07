@@ -87,7 +87,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		document.getElementById("base").style.display="none";
 	}
 	
-	function populateImpressionDL()
+	function populateBaseImpressionDL()
+	{
+		dataLayer.push({
+			  'event': 'productImpression',
+  'ecommerce': {
+    'currencyCode': 'INR',                       
+    'impressions': [
+     {
+       'name': 'Cardio',       
+       'id': '1',
+       'price': '2700.00',
+       'brand': 'GYM',       
+       'position': 1
+     },
+     {
+     'name': 'Weight Lifting',       
+       'id': '2',
+       'price': '1500.00',
+       'brand': 'GYM',       
+       'position': 2
+     },
+	 {
+     'name': 'Pilates',       
+       'id': '3',
+       'price': '700.00',
+       'brand': 'GYM',       
+       'position': 3
+     }
+	 ]
+	 }}); 
+	}		
+			
+	function populatePremiumImpressionDL()
 	{
 		dataLayer.push({
 			  'event': 'productImpression',
@@ -96,35 +128,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'impressions': [
      {
        'name': 'Base Pack',       
-       'id': '12345',
+       'id': '4',
        'price': '4900.00',
        'brand': 'GYM',       
        'position': 1
      },
      {
      'name': 'Personal Trainer',       
-       'id': '12345',
+       'id': '5',
        'price': '1500.00',
        'brand': 'GYM',       
        'position': 2
      },
 	 {
      'name': 'Yoga Class',       
-       'id': '12345',
+       'id': '6',
        'price': '800.00',
        'brand': 'GYM',       
        'position': 3
      },
 	 {
      'name': 'Steam Room',       
-       'id': '12345',
+       'id': '7',
        'price': '500.00',
        'brand': 'GYM',       
        'position': 4
      },
 	 {
      'name': 'Dietician Support',       
-       'id': '12345',
+       'id': '8',
        'price': '1000.00',
        'brand': 'GYM',       
        'position': 5
@@ -253,10 +285,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div class="btn-group btn-group-justified">
 							<div class="btn-group">
 								
-								<button type="button" class="btn btn-warning btn-lg" onclick="dispbase(); populateImpressionDL()">Base Pack</button>
+								<button type="button" class="btn btn-warning btn-lg" onclick="dispbase(); populateBaseImpressionDL()">Base Pack</button>
 							</div>
 							<div class="btn-group">
-							<button type="button" class="btn btn-warning btn-lg" onclick="dispprem();">Premium</button>
+							<button type="button" class="btn btn-warning btn-lg" onclick="dispprem(); populatePremiumImpressionDL()">Premium</button>
 							</div>	  
 						</div> 
 					 <div class="panel panel-primary" style="display:none;" id="base">
@@ -269,7 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<li class="list-group-item"><strong>TOTAL</strong><span class="badge" id="total"><i class="fa fa-inr"></i>4900</span></li>
 								</ul>
 							</div>
-							<div align="center"><button type="submit" class="mybtn" align="center">Apply Now for Base pack</button></div>
+							<div align="center"><button type="submit" class="mybtn" align="center" id="basePackSubmit">Apply Now for Base pack</button></div>
 					</div>				
 						<div class="panel panel-primary" id="premium" style="display:none;">
 						<div class="panel-heading">Premium Pack is an optional add-on to the base pack</div>
@@ -284,7 +316,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</ul>
 							</div>
 							
-							<div align="center"><button type="submit" class="mybtn" align="center">Apply Now for Premium pack</button></div>
+							<div align="center"><button type="submit" class="mybtn" align="center" id="premiumPackSubmit">Apply Now for Premium pack</button></div>
 					</div>										
 				</div>
 				<div class="modal-footer">
