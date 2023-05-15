@@ -122,8 +122,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 dataLayer.push({
   event: "view_item_list",
   ecommerce: {
-    item_list_id: "related_products",
-    item_list_name: "Related products",
+    item_list_id: "Packages viewed",
+    item_list_name: "Base pack",
 items: [
     {
       item_id: "1",
@@ -143,19 +143,19 @@ items: [
       affiliation: "NA",
       coupon: "NA",
       discount: 0.00,
-      index: 0,
+      index: 1,
       item_brand: "Gym",     
       location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
       price: 1500,
       quantity: 1
     },
 	{
-      item_id: "1",
+      item_id: "3",
       item_name: "Pilates",
       affiliation: "NA",
       coupon: "NA",
       discount: 0.00,
-      index: 0,
+      index: 2,
       item_brand: "Gym",     
       location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
       price: 700,
@@ -211,6 +211,77 @@ items: [
      }
 	 ]
 	 }}); 
+	 
+	 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "view_item_list",
+  ecommerce: {
+    item_list_id: "Packages viewed",
+    item_list_name: "Premium Pack",
+items: [
+    {
+      item_id: "1",
+      item_name: "Base Pack",
+      affiliation: "NA",
+      coupon: "NA",
+      discount: 4900.00,
+      index: 0,
+      item_brand: "Gym",     
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 4900.00,
+      quantity: 1
+    },
+    {
+      item_id: "2",
+      item_name: "Personal Trainer",
+      affiliation: "NA",
+      coupon: "NA",
+      discount: 0.00,
+      index: 1,
+      item_brand: "Gym",     
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 1500.00,
+      quantity: 1
+    },
+	{
+      item_id: "3",
+      item_name: "Yoga Class",
+      affiliation: "NA",
+      coupon: "NA",
+      discount: 0.00,
+      index: 2,
+      item_brand: "Gym",     
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 800,
+      quantity: 1
+    },
+	{
+      item_id: "4",
+      item_name: "Steam Room",
+      affiliation: "NA",
+      coupon: "NA",
+      discount: 0.00,
+      index: 3,
+      item_brand: "Gym",     
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 500,
+      quantity: 1
+    },
+	{
+      item_id: "5",
+      item_name: "Dietician Support",
+      affiliation: "NA",
+      coupon: "NA",
+      discount: 0.00,
+      index: 4,
+      item_brand: "Gym",     
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 1000,
+      quantity: 1
+    }
+]
+  }})
+	 
 						
 	}
 
