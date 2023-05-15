@@ -118,7 +118,55 @@ span.price {
 </style>
 </head>
 <body>
-
+<script>
+  dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "begin_checkout",
+  ecommerce: {
+    currency: "INR",
+    value: 4900.00,
+    coupon: "NA",
+    items: [
+    {
+      item_id: "1",
+      item_name: "Cardio",
+      affiliation: "NA",
+      coupon: "NA",
+      discount: 0.00,
+      index: 0,
+      item_brand: "Gym",     
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 2700,
+      quantity: 1
+    },
+    {
+      item_id: "2",
+      item_name: "Weight lifting",
+      affiliation: "NA",
+      coupon: "NA",
+      discount: 0.00,
+      index: 0,
+      item_brand: "Gym",     
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 1500,
+      quantity: 1
+    },
+	{
+      item_id: "1",
+      item_name: "Pilates",
+      affiliation: "NA",
+      coupon: "NA",
+      discount: 0.00,
+      index: 0,
+      item_brand: "Gym",     
+      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+      price: 700,
+      quantity: 1
+    }
+    ]
+  }
+});
+  </script> 
 <h2>Responsive Checkout Form</h2>
 <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
 <div class="row">
