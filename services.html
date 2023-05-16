@@ -74,7 +74,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N4Z2ZKC');</script>
 <!-- End Google Tag Manager -->
 		
-		<script>		
+		<script>
+	funtion pushparent() 
+			{
+				try {
+  parent.postMessage('formSubmit', 'https://akamishra.github.io/akash.mishra2.github.io/feedback.html');
+} catch(e) {
+  // Something went wrong...
+  window.console && window.console.log(e);
+}
+}		
 	function dispbase()
 	{
 		document.getElementById("base").style.display="block";
@@ -327,7 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<a href="personaltraining.html" onclick="dataLayer.push({'event': 'services_clicked',
 'service_type':'personal training',
 'service_id':'S001',
-});"><img src="img/Personal-Training.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+});pushToParent();"><img src="img/Personal-Training.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
 						<h3>Personal Training</h3></a> 						
 						
 					</td>
