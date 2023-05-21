@@ -77,7 +77,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				if(finalBmi < 18.5){
 					document.bmiForm.meaning.value = "You are too thin."
 					dataLayer.push({
-					'event':"BMI_Calculated',
+					'event':'BMI_Calculated',
 					'BMI_Value':finalBmi,
 					'BMI_Meaning':document.bmiForm.meaning.value	
 				});
@@ -85,7 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				if(finalBmi > 18.5 && finalBmi < 25){
 					document.bmiForm.meaning.value = "You are healthy."
 					dataLayer.push({
-					'event':"BMI_Calculated',
+					'event':'BMI_Calculated',
 					'BMI_Value':finalBmi,
 					'BMI_Meaning':document.bmiForm.meaning.value	
 				});
@@ -93,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				if(finalBmi > 25){
 					document.bmiForm.meaning.value = "You are overweight."
 					dataLayer.push({
-					'event':"BMI_Calculated',
+					'event':'BMI_Calculated',
 					'BMI_Value':finalBmi,
 					'BMI_Meaning':document.bmiForm.meaning.value	
 				});
@@ -102,7 +102,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				else{
 					alert("Please Fill in everything correctly")
 					dataLayer.push({
-					'event':"BMI_Calculated',
+					'event':'BMI_Calculated',
 					'BMI_Value':finalBmi,
 					'BMI_Meaning':document.bmiForm.meaning.value	
 				});
@@ -110,7 +110,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				
 				
 			}
-			
 			/*
 			function ct()
 			{
