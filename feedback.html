@@ -119,14 +119,29 @@
             }
         }
 
-        function checkAllFunctions() {
+        function saveToLocalStorage() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var comment = document.getElementById("comment").value;
+            localStorage.setItem("feedbackName", name);
+            localStorage.setItem("feedbackEmail", email);
+            localStorage.setItem("feedbackComment", comment);
+        }
+
+        function checkAllFunctions(event) {
+            event.preventDefault();
             if (validateName() && validateEmail() && validateComment()) {
+                saveToLocalStorage();
                 window.location.replace("success.html");
                 document.getElementById("correct").style.display = "none";
             } else {
                 document.getElementById("correct").style.display = "block";
             }
         }
+
+        window.onload = function() {
+            document.getElementById("feedbackForm").addEventListener("submit", checkAllFunctions);
+        };
     </script>
 </head>
 <body>
@@ -161,7 +176,7 @@
 
     <div class="container form-container">
         <h2 class="text-center">Feedback Form</h2>
-        <form>
+        <form id="feedbackForm">
             <div class="form-group">
                 <input type="text" class="form-control" id="feedbackID" value="FB1008" readonly/>
             </div>
@@ -183,7 +198,7 @@
             </div>
             <div class="text-center">
                 <div style="color:red; display:none" id="correct">Please enter correct values</div>
-                <button type="button" class="btn btn-primary btn-lg" onclick="checkAllFunctions();">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </div>
         </form>
     </div>
