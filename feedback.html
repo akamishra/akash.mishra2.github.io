@@ -198,7 +198,9 @@
             </div>
             <div class="text-center">
                 <div style="color:red; display:none" id="correct">Please enter correct values</div>
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <button type="submit" class="btn btn-primary btn-lg" onclick="dataLayer.push('event':'feedback_submitted',
+                    'email_id':document.getElementById('email').value,
+                    'name':document.getElementById('name').value)" >Submit</button>
             </div>
         </form>
     </div>
