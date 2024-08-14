@@ -13,5 +13,5 @@ function calculateCalories() {
     }
 
     const resultElement = document.getElementById("result");
-    resultElement.innerHTML = `<p class="text-center mt-3">Your estimated daily calorie needs: <strong>${bmr.toFixed(2)}</strong> calories</p>`;
+    resultElement.innerHTML = `<p class="text-center mt-3">Your estimated daily calorie needs: <strong id="ExpectedCals">${bmr.toFixed(2)}</strong> calories</p>`;
 }
